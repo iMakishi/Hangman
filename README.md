@@ -2,7 +2,7 @@
 
 ### Welcome to Hangman
 
-Forget about the chalkboard, enjoy playing with your friends at the same time this version of Hangman in a PC. 
+Forget about the chalkboard, enjoy playing this version of Hangman, with your friends at the same time in a PC. 
 
 ### About
 
