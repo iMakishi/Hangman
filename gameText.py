@@ -1,3 +1,13 @@
-aboutText = "Text what this Hangman game is about."
+aboutText = """
+  ----------------------------------------------------------------------
 
-helpText = "Text providing help tips about the Hangman game."
+    Text detailing what this Hangman game is about.
+
+  ----------------------------------------------------------------------\n"""
+
+helpText = """
+  ----------------------------------------------------------------------
+
+    Text providing help tips about the Hangman game.
+
+  ----------------------------------------------------------------------\n"""

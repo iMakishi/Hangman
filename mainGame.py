@@ -19,7 +19,7 @@ def gameIntro():
 
 def EXITCountdown(x): # Exit program timer
     total_seconds = x
-    while total_seconds > 0:
+    while total_seconds > -1:
         timer = datetime.timedelta(seconds = total_seconds)
         print("    Exiting in", timer, end = '\r')
         time.sleep(1)
@@ -46,7 +46,7 @@ def RESTART(): # Restart feature.
 
         RESTART()
 
-# ----- Game ----- #
+# ----- Game Logic ----- #
 
 def game():
     gameIntro()
@@ -99,13 +99,13 @@ def game():
                 guess = str(input("    Make your guess: "))
                 guess = guess.lower()
             else:
-                while mystery_word in exclusiveWords:
-                    if mystery_word in exclusiveWords:
-                        if mystery_word == "about":
+                while guess in exclusiveWords:
+                    if guess in exclusiveWords:
+                        if guess == "about":
                             print(aboutText)
-                        if mystery_word == "help":
+                        if guess == "help":
                             print(helpText)
-                        if mystery_word == "exit":
+                        if guess == "exit":
                             timer = 5
                             EXITCountdown(int(timer))
 
@@ -167,18 +167,26 @@ def game():
                             guess = str(input("    Make your guess: "))
                             guess = guess.lower()
                         else:
-                            while mystery_word in exclusiveWords:
-                                if mystery_word in exclusiveWords:
-                                    if mystery_word == "about":
+                            while guess in exclusiveWords:
+                                if guess in exclusiveWords:
+                                    if guess == "about":
                                         print(aboutText)
-                                    if mystery_word == "help":
+                                    if guess == "help":
                                         print(helpText)
-                                    if mystery_word == "exit":
+                                    if guess == "exit":
                                         timer = 5
                                         EXITCountdown(int(timer))
 
-                                guess = str(input("\n    Make your guess: "))
-                                guess = guess.lower()
+                                    guess = str(input("    Make your guess: "))
+                                    guess = guess.lower()
+
+                                    while guess == "" or guess.isdigit():
+                                        if guess == "":
+                                            print("    Input must be filled to procede.\n")
+                                        if guess.isdigit():
+                                            print("    Numerical inputs are not allowed.\n")
+                                        guess = str(input("    Make your guess: "))
+                                        guess = guess.lower()
 
     RESTART()
 
