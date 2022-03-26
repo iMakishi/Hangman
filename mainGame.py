@@ -190,6 +190,6 @@ def game():
 
     RESTART()
 
-# Run
+# ----- Logic Execution ----- #
 if __name__ == '__main__':
     game()
