@@ -1,4 +1,4 @@
-# 🎮 Hangman
+# 🎮 | Hangman
 
 ### Welcome to Hangman
 
