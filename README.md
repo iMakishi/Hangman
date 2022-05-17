@@ -6,8 +6,10 @@ Forget about the chalkboard, enjoy playing this version of Hangman, with your fr
 
 ### About
 
-This simple Hangman game is made with Python and is meant to run as an executable file and be displayed in a terminal environment such as Command Prompt or Windows PowerShell. Although a simple game at it's core, it counts with a bunch of interactive elements that I personally find entertaining and make the game more enjoyable while playing it.
-
-The game itself is stable and can be runned without any inconvenients, but it does have some flaws that need fixing. I also plan on taking this game on a whole other level by giving it a dedicated Graphical User Interface and filling those invisible gaps of flaws that I don't like by writing a code that can be both aesthetically pleasing, easy to read and efficent. Quite a challange but one I'm most excited about to complete.
+Hangman is a simple word guessing game you can play in your computer instead of using your notebooks or the chalkboard.
+This game is meant to be played with 2 persons or more.
+Made with Python, this game counts with a bunch of different ASCII pictures to make it easier and more fun to follow your progression while guessing the word 
+one of the players wrote.
+Although the basic logic behind the game is complete and doesn't present any flaws when running, my intention is to further develop this game either by adding new elements, making it more visually appealing, or even by compressing the code into a more efficient, advanced and cleaner way.
 
 #### Thank you and I hope you like and enjoy it.
